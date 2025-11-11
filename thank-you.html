@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - ASA Skips</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-yellow: #FFC527;
+            --dark-bg: #0A0E27;
+            --deep-blue: #1e306e;
+            --bright-blue: #267ECE;
+            --accent-purple: #7C3AED;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            background: linear-gradient(135deg, #0A0E27 0%, #1e306e 50%, #267ECE 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            color: white;
+        }
+
+        .container {
+            max-width: 600px;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(20px);
+            padding: 4rem 3rem;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .checkmark {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 2rem;
+            background: linear-gradient(135deg, var(--primary-yellow), #FBBF24);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(255, 197, 39, 0.4);
+            animation: scaleIn 0.5s ease;
+        }
+
+        @keyframes scaleIn {
+            0% { transform: scale(0); }
+            50% { transform: scale(1.1); }
+            100% { transform: scale(1); }
+        }
+
+        .checkmark svg {
+            width: 60px;
+            height: 60px;
+            fill: var(--dark-bg);
+        }
+
+        h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 1.5rem;
+            letter-spacing: -1px;
+        }
+
+        p {
+            font-size: 1.25rem;
+            line-height: 1.8;
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 1rem;
+        }
+
+        .phone {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--primary-yellow);
+            margin: 2rem 0;
+            text-decoration: none;
+            display: block;
+        }
+
+        .phone:hover {
+            color: #FBBF24;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 1.25rem 2.5rem;
+            background: linear-gradient(135deg, var(--primary-yellow), #FBBF24);
+            color: var(--dark-bg);
+            text-decoration: none;
+            border-radius: 14px;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: all 0.3s;
+            box-shadow: 0 10px 30px rgba(255, 197, 39, 0.4);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 197, 39, 0.5);
+        }
+
+        @media (max-width: 640px) {
+            .container {
+                padding: 3rem 2rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1.1rem;
+            }
+
+            .phone {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="checkmark">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+            </svg>
+        </div>
+
+        <h1>Thank You!</h1>
+
+        <p>We've received your skip hire request and will call you back within <strong>30 minutes</strong> during business hours.</p>
+
+        <p>Need immediate assistance?</p>
+
+        <a href="tel:07828131272" class="phone">07828 131272</a>
+
+        <a href="index.html" class="btn">Return to Homepage</a>
+    </div>
+
+    <script>
+        // Auto redirect after 10 seconds
+        setTimeout(function() {
+            window.location.href = 'index.html';
+        }, 10000);
+    </script>
+</body>
+</html>
