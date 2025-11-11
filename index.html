@@ -1,0 +1,1743 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ASA Skips - Professional Skip Hire in Tameside | From £100</title>
+    <meta name="description" content="ASA Skips provides affordable skip hire services in Tameside from just £100. Professional rubbish removal and waste consultation. Call 07828131272 for same-day service.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@700;800&family=Stardos+Stencil:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-yellow: #FFC527;
+            --dark-yellow: #FFB000;
+            --dark-bg: #0A0E27;
+            --deep-blue: #1e306e;
+            --bright-blue: #267ECE;
+            --accent-purple: #7C3AED;
+            --accent-pink: #EC4899;
+            --light-gray: #F8FAFC;
+            --text-gray: #64748B;
+            --border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: #0F172A;
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            background: var(--light-gray);
+        }
+
+        /* Header */
+        .header {
+            background: #000000;
+            backdrop-filter: blur(20px);
+            color: white;
+            padding: 1.25rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .header-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            text-decoration: none;
+        }
+
+        .logo-image {
+            width: 52px;
+            height: 52px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+
+        .logo-text {
+            font-family: 'Stardos Stencil', serif;
+            font-size: 1.7rem;
+            font-weight: 700;
+            color: white;
+            letter-spacing: 2.5px;
+            -webkit-text-stroke: 0.5px white;
+            text-shadow:
+                1px 1px 0px rgba(255, 255, 255, 0.5),
+                2px 2px 0px rgba(255, 255, 255, 0.3),
+                3px 3px 5px rgba(0, 0, 0, 0.4);
+        }
+
+        .header-cta {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .phone-link {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s;
+        }
+
+        .phone-link:hover {
+            background: rgba(255, 197, 39, 0.2);
+            border-color: var(--primary-yellow);
+            transform: translateY(-2px);
+        }
+
+        .phone-link svg {
+            width: 20px;
+            height: 20px;
+            fill: var(--primary-yellow);
+        }
+
+        /* Hero Section - Premium Gradient Mesh */
+        .hero {
+            position: relative;
+            min-height: 90vh;
+            display: flex;
+            align-items: center;
+            padding: 4rem 2rem;
+            overflow: hidden;
+            background: linear-gradient(135deg, #0A0E27 0%, #1e306e 50%, #267ECE 100%);
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -25%;
+            width: 800px;
+            height: 800px;
+            background: radial-gradient(circle, rgba(255, 197, 39, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -30%;
+            left: -15%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(124, 58, 237, 0.15) 0%, transparent 70%);
+            border-radius: 50%;
+            animation: float 15s ease-in-out infinite reverse;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(30px, -30px) scale(1.1); }
+        }
+
+        .hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1.1fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .hero-text h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 4.5rem;
+            font-weight: 800;
+            margin-bottom: 2rem;
+            line-height: 1.1;
+            letter-spacing: -2px;
+            color: white;
+        }
+
+        .hero-text .highlight {
+            background: linear-gradient(135deg, var(--primary-yellow), #FBBF24);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            position: relative;
+            display: inline-block;
+        }
+
+        .hero-text .subtitle {
+            font-size: 1.35rem;
+            margin-bottom: 3rem;
+            color: rgba(255, 255, 255, 0.9);
+            line-height: 1.7;
+            font-weight: 400;
+        }
+
+        .hero-benefits {
+            list-style: none;
+            margin-bottom: 3rem;
+            display: grid;
+            gap: 1.25rem;
+        }
+
+        .hero-benefits li {
+            font-size: 1.1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            color: white;
+            padding: 1rem 1.5rem;
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(10px);
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s;
+        }
+
+        .hero-benefits li:hover {
+            background: rgba(255, 197, 39, 0.15);
+            border-color: rgba(255, 197, 39, 0.3);
+            transform: translateX(10px);
+        }
+
+        .hero-benefits li svg {
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 1.25rem;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 1.25rem 2.5rem;
+            font-size: 1.1rem;
+            font-weight: 700;
+            border: none;
+            border-radius: 14px;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.75rem;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn > * {
+            position: relative;
+            z-index: 1;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-yellow), #FBBF24);
+            color: var(--dark-bg);
+            box-shadow: 0 10px 30px rgba(255, 197, 39, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 40px rgba(255, 197, 39, 0.5);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: rgba(255, 255, 255, 0.2);
+            border-color: rgba(255, 255, 255, 0.5);
+            transform: translateY(-3px);
+        }
+
+        /* Glassmorphic Skip Card */
+        .hero-visual {
+            position: relative;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 30px;
+            padding: 3rem;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            animation: floatCard 6s ease-in-out infinite;
+        }
+
+        @keyframes floatCard {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+        }
+
+        .glass-card-inner {
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 20px;
+            padding: 2.5rem;
+            text-align: center;
+        }
+
+        .price-highlight {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 5rem;
+            font-weight: 800;
+            background: linear-gradient(135deg, var(--bright-blue), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            line-height: 1;
+            margin-bottom: 1rem;
+        }
+
+        .price-label {
+            font-size: 1.5rem;
+            color: #1E293B;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+        }
+
+        .price-features {
+            text-align: left;
+            background: var(--light-gray);
+            padding: 1.5rem;
+            border-radius: 15px;
+        }
+
+        .price-features li {
+            color: #334155;
+            padding: 0.75rem 0;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .price-features li svg {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Services Section - Cards with Depth */
+        .services {
+            padding: 8rem 2rem;
+            position: relative;
+            background: white;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 5rem;
+        }
+
+        .section-header h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--dark-bg);
+            margin-bottom: 1.5rem;
+            letter-spacing: -1.5px;
+            line-height: 1.2;
+        }
+
+        .section-header .gradient-text {
+            background: linear-gradient(135deg, var(--bright-blue), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .section-header p {
+            font-size: 1.25rem;
+            color: var(--text-gray);
+            max-width: 600px;
+            margin: 0 auto;
+            font-weight: 400;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 3rem;
+            border-radius: 24px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: linear-gradient(90deg, var(--bright-blue), var(--accent-purple), var(--primary-yellow));
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .service-card:hover::before {
+            opacity: 1;
+        }
+
+        .service-card:hover {
+            transform: translateY(-12px);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+            border-color: rgba(38, 126, 206, 0.2);
+        }
+
+        .service-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, var(--bright-blue), var(--accent-purple));
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            box-shadow: 0 8px 24px rgba(38, 126, 206, 0.3);
+        }
+
+        .service-icon svg {
+            width: 40px;
+            height: 40px;
+            fill: white;
+        }
+
+        .service-card h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--dark-bg);
+            margin-bottom: 1.5rem;
+            letter-spacing: -0.5px;
+        }
+
+        .service-card .price {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 900;
+            background: linear-gradient(135deg, var(--bright-blue), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1.5rem;
+            line-height: 1;
+        }
+
+        .service-card ul {
+            list-style: none;
+            margin-bottom: 2rem;
+        }
+
+        .service-card ul li {
+            padding: 0.75rem 0;
+            color: #475569;
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .service-card ul li svg {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            margin-top: 2px;
+        }
+
+        .service-card .popular-badge {
+            position: absolute;
+            top: 2rem;
+            right: 2rem;
+            background: linear-gradient(135deg, var(--primary-yellow), #FBBF24);
+            color: var(--dark-bg);
+            padding: 0.5rem 1.25rem;
+            border-radius: 50px;
+            font-size: 0.8rem;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            box-shadow: 0 4px 12px rgba(255, 197, 39, 0.4);
+        }
+
+        /* Areas Section */
+        .areas {
+            padding: 8rem 2rem;
+            background: linear-gradient(180deg, white 0%, var(--light-gray) 100%);
+        }
+
+        .areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1.5rem;
+            margin-top: 3rem;
+        }
+
+        .area-item {
+            background: white;
+            padding: 1.75rem 1.5rem;
+            border-radius: 16px;
+            text-align: center;
+            font-weight: 600;
+            font-size: 1rem;
+            color: var(--dark-bg);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            border: 2px solid rgba(38, 126, 206, 0.1);
+            cursor: default;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        .area-item:hover {
+            background: linear-gradient(135deg, var(--bright-blue), var(--accent-purple));
+            color: white;
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 12px 30px rgba(38, 126, 206, 0.3);
+            border-color: transparent;
+        }
+
+        /* Testimonials - Dark Section */
+        .testimonials {
+            padding: 8rem 2rem;
+            background: var(--dark-bg);
+            color: white;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .testimonials::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="2" cy="2" r="1" fill="rgba(255,255,255,0.05)"/></svg>') repeat;
+            opacity: 0.5;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-top: 4rem;
+            position: relative;
+            z-index: 1;
+        }
+
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 3rem;
+            border-radius: 24px;
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+        }
+
+        .testimonial-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-8px);
+            border-color: rgba(255, 197, 39, 0.3);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .testimonial-rating {
+            color: var(--primary-yellow);
+            font-size: 1.75rem;
+            margin-bottom: 1.5rem;
+            letter-spacing: 2px;
+        }
+
+        .testimonial-text {
+            font-size: 1.15rem;
+            line-height: 1.8;
+            margin-bottom: 2rem;
+            font-style: italic;
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .testimonial-author {
+            font-weight: 700;
+            color: var(--primary-yellow);
+            font-size: 1.1rem;
+        }
+
+        /* About Section */
+        .about {
+            padding: 8rem 2rem;
+            background: white;
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1.2fr 1fr;
+            gap: 5rem;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 800;
+            color: var(--dark-bg);
+            margin-bottom: 2rem;
+            letter-spacing: -1.5px;
+            line-height: 1.2;
+        }
+
+        .about-text p {
+            font-size: 1.15rem;
+            color: var(--text-gray);
+            margin-bottom: 1.5rem;
+            line-height: 1.8;
+        }
+
+        .about-features {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .about-feature {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+            border: 2px solid rgba(38, 126, 206, 0.1);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+        }
+
+        .about-feature:hover {
+            transform: translateX(-10px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+            border-color: var(--bright-blue);
+        }
+
+        .about-feature-icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--bright-blue), var(--accent-purple));
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            box-shadow: 0 8px 20px rgba(38, 126, 206, 0.3);
+        }
+
+        .about-feature-icon svg {
+            width: 30px;
+            height: 30px;
+            fill: white;
+        }
+
+        .about-feature-content h4 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.4rem;
+            color: var(--dark-bg);
+            margin-bottom: 0.75rem;
+            font-weight: 800;
+        }
+
+        .about-feature-content p {
+            font-size: 1rem;
+            color: var(--text-gray);
+            margin: 0;
+            line-height: 1.7;
+        }
+
+        /* Gallery Section */
+        .gallery {
+            padding: 8rem 2rem;
+            background: linear-gradient(180deg, white 0%, var(--light-gray) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-top: 4rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            cursor: pointer;
+            background: white;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-12px) scale(1.02);
+            box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 0%, transparent 100%);
+            padding: 2rem;
+            transform: translateY(10px);
+            opacity: 0;
+            transition: all 0.4s;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .gallery-overlay h3 {
+            color: white;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+        }
+
+        .gallery-overlay p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.95rem;
+        }
+
+        /* FAQ Section */
+        .faq {
+            padding: 8rem 2rem;
+            background: white;
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: white;
+            border: 2px solid rgba(38, 126, 206, 0.1);
+            border-radius: 20px;
+            margin-bottom: 1.5rem;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .faq-item:hover {
+            border-color: var(--bright-blue);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .faq-question {
+            padding: 2rem 2.5rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 2rem;
+            background: white;
+            transition: all 0.3s;
+        }
+
+        .faq-question:hover {
+            background: var(--light-gray);
+        }
+
+        .faq-question h3 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--dark-bg);
+            margin: 0;
+        }
+
+        .faq-icon {
+            width: 32px;
+            height: 32px;
+            background: linear-gradient(135deg, var(--bright-blue), var(--accent-purple));
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            transition: transform 0.3s;
+        }
+
+        .faq-icon svg {
+            width: 18px;
+            height: 18px;
+            fill: white;
+            transition: transform 0.3s;
+        }
+
+        .faq-item.active .faq-icon svg {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease, padding 0.4s ease;
+            padding: 0 2.5rem;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            padding: 0 2.5rem 2rem 2.5rem;
+        }
+
+        .faq-answer p {
+            color: var(--text-gray);
+            line-height: 1.8;
+            font-size: 1.05rem;
+            margin: 0;
+        }
+
+        /* Contact Form */
+        .contact {
+            padding: 8rem 2rem;
+            background: linear-gradient(135deg, var(--dark-bg) 0%, var(--deep-blue) 100%);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact::before {
+            content: '';
+            position: absolute;
+            top: -20%;
+            right: -10%;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(circle, rgba(255, 197, 39, 0.1) 0%, transparent 70%);
+            border-radius: 50%;
+        }
+
+        .contact-container {
+            max-width: 900px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        .contact-box {
+            background: rgba(255, 255, 255, 0.08);
+            backdrop-filter: blur(20px);
+            padding: 4rem;
+            border-radius: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+        }
+
+        .form-group {
+            margin-bottom: 2rem;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: white;
+            font-size: 1rem;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            padding: 1.25rem 1.5rem;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 14px;
+            font-size: 1rem;
+            font-family: inherit;
+            transition: all 0.3s;
+            background: rgba(255, 255, 255, 0.05);
+            color: white;
+        }
+
+        .form-group input::placeholder,
+        .form-group textarea::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            outline: none;
+            border-color: var(--primary-yellow);
+            background: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 0 0 4px rgba(255, 197, 39, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 140px;
+        }
+
+        .form-group select {
+            cursor: pointer;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        /* Footer */
+        .footer {
+            background: #050814;
+            color: white;
+            padding: 4rem 2rem 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-section h3 {
+            color: var(--primary-yellow);
+            margin-bottom: 1.5rem;
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 1.4rem;
+            font-weight: 800;
+        }
+
+        .footer-section p,
+        .footer-section a {
+            color: rgba(255, 255, 255, 0.7);
+            text-decoration: none;
+            display: block;
+            margin-bottom: 0.75rem;
+            transition: color 0.3s;
+            font-size: 1rem;
+        }
+
+        .footer-section a:hover {
+            color: var(--primary-yellow);
+        }
+
+        .footer-bottom {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            text-align: center;
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 1200px) {
+            .hero-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .hero-text h1 {
+                font-size: 3.5rem;
+            }
+
+            .glass-card {
+                max-width: 500px;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 968px) {
+            .hero-text h1 {
+                font-size: 2.8rem;
+            }
+
+            .section-header h2 {
+                font-size: 2.5rem;
+            }
+
+            .about-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+            .services-grid,
+            .testimonials-grid,
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-box {
+                padding: 2.5rem;
+            }
+
+            .faq-question {
+                padding: 1.5rem 2rem;
+            }
+
+            .faq-question h3 {
+                font-size: 1.1rem;
+            }
+
+            .faq-item.active .faq-answer {
+                padding: 0 2rem 1.5rem 2rem;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .hero-text h1 {
+                font-size: 2.2rem;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            .price-highlight {
+                font-size: 3.5rem;
+            }
+
+            .service-card .price {
+                font-size: 2.5rem;
+            }
+
+            .btn {
+                padding: 1rem 1.75rem;
+                font-size: 1rem;
+            }
+
+            .gallery-item img {
+                height: 300px;
+            }
+
+            .gallery-overlay h3 {
+                font-size: 1.2rem;
+            }
+
+            .faq-question {
+                padding: 1.25rem 1.5rem;
+            }
+
+            .faq-question h3 {
+                font-size: 1rem;
+            }
+
+            .faq-item.active .faq-answer {
+                padding: 0 1.5rem 1.25rem 1.5rem;
+            }
+        }
+
+        /* Smooth Scroll Reveal Animations */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#" class="logo">
+                <div class="logo-image">
+                    <img src="tameside-skips.svg" alt="ASA Skips Logo">
+                </div>
+                <span class="logo-text">ASA SKIPS</span>
+            </a>
+            <div class="header-cta">
+                <a href="tel:07828131272" class="phone-link">
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+                    07828 131272
+                </a>
+                <a href="#contact" class="btn btn-primary" style="padding: 0.85rem 1.75rem; font-size: 1rem;">Request Callback</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Professional Skip Hire in <span class="highlight">Tameside</span></h1>
+                <p class="subtitle">Fast, reliable skip hire services with same-day delivery. Experience the difference with Tameside's most trusted waste management experts.</p>
+
+                <ul class="hero-benefits">
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="#FFC527" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                        <span>Unbeatable Value - Skip Hire from £100</span>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="#FFC527" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                        <span>Same Day & Next Day Delivery Available</span>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24" fill="#FFC527" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                        <span>Fully Licensed & Insured Service</span>
+                    </li>
+                </ul>
+
+                <div class="hero-buttons">
+                    <a href="tel:07828131272" class="btn btn-primary">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" style="width: 22px; height: 22px; fill: currentColor;"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56-.35-.12-.74-.03-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/></svg>
+                        Call Now: 07828 131272
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">Request a Callback</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="glass-card">
+                    <div class="glass-card-inner">
+                        <div class="price-label" style="font-size: 1.3rem; margin-bottom: 0.5rem;">Skip Hire From</div>
+                        <div class="price-highlight">£140</div>
+                        <div class="price-label" style="font-size: 1rem; margin-top: 0.5rem;">2 Yard Mini Skip</div>
+                        <ul class="price-features">
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="#267ECE" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                2, 4 & 8 yard skips available
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="#267ECE" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                Up to 1 week hire included
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="#267ECE" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                Same-day delivery available
+                            </li>
+                            <li>
+                                <svg viewBox="0 0 24 24" fill="#267ECE" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                                Extra time? Call for quote
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our <span class="gradient-text">Work</span> in Action</h2>
+                <p>See our professional skip hire services across Tameside</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in">
+                    <img src="images/WhatsApp Image 2025-11-11 at 14.33.09 (2).jpeg" alt="Skip Hire Truck with Skip">
+                    <div class="gallery-overlay">
+                        <h3>Professional Service</h3>
+                        <p>Our truck with skip ready for delivery</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in">
+                    <img src="images/WhatsApp Image 2025-11-11 at 14.33.09.jpeg" alt="Skip Being Lifted">
+                    <div class="gallery-overlay">
+                        <h3>Expert Handling</h3>
+                        <p>Professional skip collection in action</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in">
+                    <img src="images/WhatsApp Image 2025-11-11 at 14.33.11.jpeg" alt="Multiple Skips Available">
+                    <div class="gallery-overlay">
+                        <h3>Range of Sizes</h3>
+                        <p>Multiple skip sizes available for your needs</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Skip Hire <span class="gradient-text">Pricing</span></h2>
+                <p>Transparent, competitive pricing with no hidden fees. All prices include up to 1 week hire.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+                    </div>
+                    <h3>2 Yard Skip</h3>
+                    <p style="color: var(--text-gray); font-size: 1.1rem; margin-bottom: 1rem; font-weight: 600;">Mini</p>
+                    <div class="price">£140</div>
+                    <ul>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="#267ECE" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Perfect for small projects</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="#267ECE" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Up to 1 week hire included</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="#267ECE" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Same-day delivery available</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="#267ECE" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Extra time? Call for quote</span>
+                        </li>
+                    </ul>
+                    <a href="tel:07828131272" class="btn btn-primary" style="width: 100%;">Book Now</a>
+                </div>
+
+                <div class="service-card fade-in">
+                    <span class="popular-badge">MOST POPULAR</span>
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+                    </div>
+                    <h3>4 Yard Skip</h3>
+                    <p style="color: var(--text-gray); font-size: 1.1rem; margin-bottom: 1rem; font-weight: 600;">Midi</p>
+                    <div class="price">£180</div>
+                    <ul>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="#267ECE" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Ideal for most projects</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="#267ECE" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Up to 1 week hire included</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="#267ECE" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Same-day delivery available</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="#267ECE" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Extra time? Call for quote</span>
+                        </li>
+                    </ul>
+                    <a href="tel:07828131272" class="btn btn-primary" style="width: 100%;">Book Now</a>
+                </div>
+
+                <div class="service-card fade-in">
+                    <div class="service-icon">
+                        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm13.5-9l1.96 2.5H17V9.5h2.5zm-1.5 9c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/></svg>
+                    </div>
+                    <h3>8 Yard Skip</h3>
+                    <p style="color: var(--text-gray); font-size: 1.1rem; margin-bottom: 1rem; font-weight: 600;">Ton Bags</p>
+                    <div class="price">£280</div>
+                    <ul>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="#267ECE" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Perfect for large projects</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="#267ECE" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Up to 1 week hire included</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="#267ECE" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Same-day delivery available</span>
+                        </li>
+                        <li>
+                            <svg viewBox="0 0 24 24" fill="#267ECE" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                            <span>Extra time? Call for quote</span>
+                        </li>
+                    </ul>
+                    <a href="tel:07828131272" class="btn btn-primary" style="width: 100%;">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header" style="color: white;">
+                <h2 style="color: white;">What Our <span class="highlight">Customers</span> Say</h2>
+                <p style="color: rgba(255,255,255,0.8);">Don't just take our word for it - hear from our satisfied customers</p>
+            </div>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Absolutely brilliant service! The skip was delivered on time and collected promptly. The price was very competitive and the team were so helpful. Will definitely use ASA Skips again."</p>
+                    <p class="testimonial-author">Sarah M., Hyde</p>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Used ASA Skips for our house renovation. Great communication throughout, fair pricing, and they made everything so easy. Highly recommend for anyone in Tameside looking for skip hire."</p>
+                    <p class="testimonial-author">James T., Ashton-under-Lyne</p>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <div class="testimonial-rating">★★★★★</div>
+                    <p class="testimonial-text">"Fantastic local service! Called in the morning and had a skip delivered the same afternoon. Professional, friendly, and excellent value at £100. Can't fault them at all."</p>
+                    <p class="testimonial-author">Linda W., Stalybridge</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text fade-in">
+                    <h2>About <span class="gradient-text">ASA Skips</span></h2>
+                    <p>ASA Skips is a trusted, family-run skip hire company serving Tameside and surrounding areas. With years of experience in waste management and skip hire, we pride ourselves on delivering exceptional service at competitive prices.</p>
+                    <p>As part of the ASA family (alongside ASA Plumbing), we understand the importance of reliable, professional service. Whether you're undertaking a home renovation, garden clearance, or commercial project, we have the perfect waste solution for you.</p>
+                    <p>Our commitment to customer satisfaction and environmental responsibility sets us apart. We ensure all waste is disposed of legally and responsibly, with as much as possible being recycled.</p>
+                </div>
+
+                <div class="about-features">
+                    <div class="about-feature fade-in">
+                        <div class="about-feature-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+                        </div>
+                        <div class="about-feature-content">
+                            <h4>Local Expertise</h4>
+                            <p>Based in Hyde, we know Tameside inside out and deliver fast, reliable service</p>
+                        </div>
+                    </div>
+                    <div class="about-feature fade-in">
+                        <div class="about-feature-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.65 0 2.28.78 2.38 1.87h2.13c-.1-1.45-1.11-2.72-2.91-3.14V4h-2.4v1.68c-1.64.36-2.96 1.47-2.96 3.17 0 2.02 1.62 3.03 3.99 3.61 2.11.49 2.53 1.21 2.53 1.99 0 .64-.47 1.55-2.29 1.55-1.75 0-2.44-.8-2.54-1.87H5.32c.11 1.94 1.5 3 3.13 3.37V19h2.4v-1.82c1.66-.32 2.96-1.31 2.96-3.12 0-2.48-2.07-3.33-3.99-3.86H9.8z"/><text x="8.5" y="16.5" font-family="Arial" font-size="9" font-weight="bold" fill="currentColor">£</text></svg>
+                        </div>
+                        <div class="about-feature-content">
+                            <h4>Best Prices</h4>
+                            <p>Competitive pricing with no hidden fees. Skip hire from just £100</p>
+                        </div>
+                    </div>
+                    <div class="about-feature fade-in">
+                        <div class="about-feature-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/></svg>
+                        </div>
+                        <div class="about-feature-content">
+                            <h4>Fast Service</h4>
+                            <p>Same-day and next-day delivery available throughout Tameside</p>
+                        </div>
+                    </div>
+                    <div class="about-feature fade-in">
+                        <div class="about-feature-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/></svg>
+                        </div>
+                        <div class="about-feature-content">
+                            <h4>Eco-Friendly</h4>
+                            <p>Committed to responsible waste disposal and maximizing recycling</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked <span class="gradient-text">Questions</span></h2>
+                <p>Everything you need to know about our skip hire services</p>
+            </div>
+
+            <div class="faq-container">
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>What size skip do I need?</h3>
+                        <div class="faq-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The skip size you need depends on the amount of waste you have. For a small bathroom renovation or garden clearance, a 4-yard skip is usually sufficient. For larger projects like a full house clearance or kitchen renovation, you might need a 6-8 yard skip. Our team can provide expert advice to help you choose the right size for your project. Give us a call on 07828 131272 and we'll guide you.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>How long can I keep the skip?</h3>
+                        <div class="faq-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Our standard skip hire includes up to 2 weeks rental. This gives you plenty of time to complete your project at your own pace. If you need the skip for longer, just let us know and we can arrange an extension for a small additional fee. We're flexible and will work around your schedule.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Do I need a permit to place a skip on the road?</h3>
+                        <div class="faq-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>If you're placing the skip on your own private property (driveway, front garden, etc.), you don't need a permit. However, if the skip needs to be placed on the public road or pavement, you'll need a permit from your local council. We can help advise you on this and assist with the permit application process if needed.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>What can't I put in the skip?</h3>
+                        <div class="faq-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We accept most types of household and commercial waste, including wood, metal, plastics, garden waste, and general building materials. However, we cannot accept hazardous materials such as asbestos, chemicals, paint, tyres, electrical items (WEEE), fluorescent tubes, or fridges/freezers. If you're unsure about any items, please give us a call and we'll be happy to advise.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>Do you offer same-day delivery?</h3>
+                        <div class="faq-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! Subject to availability, we can often provide same-day skip delivery across Tameside and surrounding areas. If you need a skip urgently, call us on 07828 131272 before 10am and we'll do our best to get one to you the same day. We also offer next-day delivery as standard.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>What happens to my waste?</h3>
+                        <div class="faq-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We're committed to environmental responsibility. Once we collect your skip, we take it to a licensed waste transfer station where it's sorted. We recycle as much waste as possible - typically over 80% of general waste can be recycled. Only materials that cannot be recycled are disposed of safely and legally in accordance with environmental regulations.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>How do I book a skip?</h3>
+                        <div class="faq-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Booking a skip is easy! Simply call us on 07828 131272 or fill in the contact form on this page. We'll ask you a few questions about your requirements (size needed, delivery location, dates) and provide you with an instant quote. Once you're happy, we'll arrange delivery at a time that suits you.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item fade-in">
+                    <div class="faq-question" onclick="toggleFaq(this)">
+                        <h3>What areas do you cover?</h3>
+                        <div class="faq-icon">
+                            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/></svg>
+                        </div>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We cover all of Tameside including Hyde, Ashton-under-Lyne, Stalybridge, Mossley, Dukinfield, Denton, Droylsden, and Audenshaw. We also serve surrounding areas including parts of Manchester, Stockport, Oldham, and Glossop. If you're not sure if we cover your area, give us a call and we'll let you know.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Trustworthy, <span class="gradient-text">Prompt</span> Service</h2>
+                <p>We get to you promptly and are 100% reliable.</p>
+            </div>
+
+            <div class="gallery-grid">
+                <div class="gallery-item fade-in">
+                    <img src="images/WhatsApp Image 2025-11-11 at 14.33.14 (1).jpeg" alt="ASA Skips Truck">
+                    <div class="gallery-overlay">
+                        <h3>Reliable Transport</h3>
+                        <p>Professional truck with ASA Skips branding</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in">
+                    <img src="images/WhatsApp Image 2025-11-11 at 14.33.17.jpeg" alt="Multiple Skip Options">
+                    <div class="gallery-overlay">
+                        <h3>Variety of Skips</h3>
+                        <p>Different sizes to meet all your waste disposal needs</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item fade-in">
+                    <img src="images/WhatsApp Image 2025-11-11 at 14.33.25.jpeg" alt="ASA Skips Clear Branding">
+                    <div class="gallery-overlay">
+                        <h3>Quality Service</h3>
+                        <p>Clean, well-maintained skips with clear contact details</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <div class="section-header" style="color: white;">
+                <h2 style="color: white;">Request a <span class="highlight">Callback</span></h2>
+                <p style="color: rgba(255,255,255,0.8);">Fill in the form below and we'll call you back within 30 minutes during business hours</p>
+            </div>
+
+            <div class="contact-box">
+                <form id="callbackForm" action="https://formsubmit.co/asaplumbing@hotmail.co.uk" method="POST">
+                    <!-- Formsubmit Configuration -->
+                    <input type="hidden" name="_subject" value="New Skip Hire Request from ASA Skips Website">
+                    <input type="hidden" name="_template" value="box">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="text" name="_honey" style="display:none">
+                    <input type="hidden" name="_next" value="thank-you.html">
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="John Smith">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="07828 131272">
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="postcode">Postcode *</label>
+                            <input type="text" id="postcode" name="postcode" required placeholder="SK14 2LG">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Required *</label>
+                            <select id="service" name="service" required>
+                                <option value="">Select a skip size...</option>
+                                <option value="2 Yard Skip - Mini (£140)">2 Yard Skip - Mini (£140)</option>
+                                <option value="4 Yard Skip - Midi (£180)">4 Yard Skip - Midi (£180)</option>
+                                <option value="8 Yard Skip - Ton Bags (£280)">8 Yard Skip - Ton Bags (£280)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Additional Information</label>
+                        <textarea id="message" name="message" placeholder="Tell us about your requirements..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary" style="width: 100%; font-size: 1.2rem; padding: 1.5rem;">Request Callback</button>
+
+                    <p style="text-align: center; margin-top: 2rem; color: rgba(255, 255, 255, 0.9); font-size: 1.05rem;">
+                        Or call us directly: <a href="tel:07828131272" style="color: var(--primary-yellow); font-weight: 700; text-decoration: none;">07828 131272</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Areas Covered -->
+    <section class="areas" id="areas">
+        <div class="container">
+            <div class="section-header">
+                <h2>Areas We <span class="gradient-text">Cover</span></h2>
+                <p>Serving Tameside and surrounding areas with reliable skip hire</p>
+            </div>
+
+            <div class="areas-grid">
+                <div class="area-item fade-in">Hyde</div>
+                <div class="area-item fade-in">Ashton-under-Lyne</div>
+                <div class="area-item fade-in">Stalybridge</div>
+                <div class="area-item fade-in">Mossley</div>
+                <div class="area-item fade-in">Dukinfield</div>
+                <div class="area-item fade-in">Denton</div>
+                <div class="area-item fade-in">Droylsden</div>
+                <div class="area-item fade-in">Audenshaw</div>
+                <div class="area-item fade-in">Longdendale</div>
+                <div class="area-item fade-in">Stockport</div>
+                <div class="area-item fade-in">Manchester</div>
+                <div class="area-item fade-in">Glossop</div>
+                <div class="area-item fade-in">Oldham</div>
+                <div class="area-item fade-in">Saddleworth</div>
+                <div class="area-item fade-in">Marple</div>
+                <div class="area-item fade-in">Bredbury</div>
+                <div class="area-item fade-in">Romiley</div>
+                <div class="area-item fade-in">Hattersley</div>
+                <div class="area-item fade-in">Mottram</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>ASA Skips</h3>
+                <p>Professional skip hire and waste management services in Tameside.</p>
+                <p style="margin-top: 1.5rem;"><strong>Part of the ASA family</strong></p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><a href="tel:07828131272">07828 131272</a></p>
+                <p>53 Repton Avenue<br>Hyde, Cheshire<br>SK14 2LG</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Services</h3>
+                <p><a href="#services">2 Yard Skip Mini - £140</a></p>
+                <p><a href="#services">4 Yard Skip Midi - £180</a></p>
+                <p><a href="#services">8 Yard Skip Ton Bags - £280</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <p><a href="#areas">Areas Covered</a></p>
+                <p><a href="#testimonials">Testimonials</a></p>
+                <p><a href="#about">About Us</a></p>
+                <p><a href="#faq">FAQs</a></p>
+                <p><a href="#gallery">Gallery</a></p>
+                <p><a href="#contact">Request Callback</a></p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 ASA Skips. All rights reserved. | Part of ASA Services</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            });
+        });
+
+        // FAQ Toggle
+        function toggleFaq(element) {
+            const faqItem = element.parentElement;
+            const isActive = faqItem.classList.contains('active');
+
+            // Close all FAQs
+            document.querySelectorAll('.faq-item').forEach(item => {
+                item.classList.remove('active');
+            });
+
+            // Open clicked FAQ if it wasn't already open
+            if (!isActive) {
+                faqItem.classList.add('active');
+            }
+        }
+
+        // Scroll reveal animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+    </script>
+</body>
+</html>
