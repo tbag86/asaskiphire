@@ -1877,7 +1877,7 @@
                     <input type="hidden" name="_template" value="box">
                     <input type="hidden" name="_captcha" value="false">
                     <input type="text" name="_honey" style="display:none">
-                    <input type="hidden" id="formRedirect" name="_next" value="">
+                    <input type="hidden" id="formRedirect" name="_next" value="https://www.asaskip.com/thank-you.html">
 
                     <div class="form-row">
                         <div class="form-group">
@@ -1992,13 +1992,7 @@
     </footer>
 
     <script>
-        // Set form redirect URL dynamically based on current domain
-        document.addEventListener('DOMContentLoaded', function() {
-            const redirectInput = document.getElementById('formRedirect');
-            if (redirectInput) {
-                redirectInput.value = window.location.origin + '/thank-you.html';
-            }
-        });
+        // Form redirect URL is now hardcoded in the HTML for FormSubmit compatibility
 
         // Smooth scrolling
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
